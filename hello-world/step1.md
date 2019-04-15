@@ -13,7 +13,7 @@ Try using "kubectl get nodes"
 EXAMPLE APP for Deployment:
 `kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
 
-## CECK IF THERE IS A DEPLOYMENT RUNNING:
+## CHECK IF YOUR DEPLOYMENT WAS SUCCESSFUL:
 Use:
 
 `kubectl get pods`{{execute}}
@@ -22,26 +22,32 @@ Or use:
 
 `kubectl get deployments`{{execute}}
 
+##TROUBLESHOOTING
+
+List your nodes
+
+`kubectl get nodes`{{execute HOST1}}
+
+Check all your kubernetes components:
+
+`kubectl get pods --all-namespaces`{{execute HOST1}}
+
+Details of your deployment:
+
+`kubectl describe pod [PODNAME]`{{execute HOST1}}
+
 **Need help?**
 ## CHEATSHEET
 Did you check if your kubernetes-components are in place?
 
-Try:
-
-
+Try using:
 
 `cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf`{{execute}}
 
-Is your cluster ready?
-Check which parts are installed with running:
-`kubectl get pods --all-namespaces`{{execute HOST1}}
 
-or try:
+Do you need a network? Try:
 
-`kubectl get nodes`{{execute HOST1}}
-
-Do you miss your network? Try:
 `kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`{{execute HOST1}}
 
