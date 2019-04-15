@@ -2,8 +2,10 @@ This is your first step.
 
 ## Task
 
-This is an _example_ of creating a scenario and running a **command**
+We start running a local kubernetes with minikube
+Download minikube and make it executable **command**
 
-`go get -u sigs.k8s.io/kind && kind create cluster`{{execute}}
+`curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 \
+  && chmod +x minikube`{{execute}}
 
-Try running test-script.sh
+`mv minikube /usr/local/bin`{{execute}}
