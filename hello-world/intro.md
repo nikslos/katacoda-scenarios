@@ -1,1 +1,1 @@
-Welcome, learn how to deploy your first app ona kubernetes cluster
+Welcome, make your first steps deploying an app for your kubernetes-cluster
