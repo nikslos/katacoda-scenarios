@@ -1,25 +1,34 @@
-Learn how do deploy a application on a kubernetes-cluster
+Learn how to work with a kubernetes-cluster and deploy your first application.
 
-## CHEATSHEET
-
-We start with one "master" and one "node". Try:
-
-`kubeadm init`{{execute}}\n
+`kubeadm init`{{execute HOST1}}
 Switch to your node and tell it to join the cluster
-`kubeadm join IP --token [TOKEN]`{{execute}}
+`kubeadm join IP --token [TOKEN]`{{execute HOST2}}
 
 Try using "kubectl get nodes"
-`\n`HIDE THIS HERE:
+
+Ready for deployments?
+## GO FOR IT
+EXAMPLE APP for Deployment:
+`kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
+
+
+**Need help?**
+## CHEATSHEET
+Did you check if your kubernetes-components are in place?
+
+Try:
 `cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf`{{execute}}
-`\n`Is your cluster ready? Check which parts are installed with running:
-`kubectl get pods --all-namespaces`{{execute}}
-and
-`kubectl get nodes`{{execute}}
-Yay! Ready to deploy!
-Do you miss your network? Try:
-`kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`{{execute}}
 
-EXAMPLE APP for Deployment:
-`kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
+Is your cluster ready?
+Check which parts are installed with running:
+`kubectl get pods --all-namespaces`{{execute HOST1}}
+
+or try:
+
+`kubectl get nodes`{{execute HOST1}}
+
+Do you miss your network? Try:
+`kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`{{execute HOST1}}
+
