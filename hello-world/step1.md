@@ -5,7 +5,7 @@ This is your first step.
 We start running a local kubernetes with minikube
 Download minikube and make it executable **command**
 
-`curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 \
+`curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
   && chmod +x minikube`{{execute}}
 
-`mv minikube /usr/local/bin`{{execute}}
+`cp minikube /usr/local/bin && rm minikube`{{execute}}
