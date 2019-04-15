@@ -19,7 +19,7 @@ and
 `kubectl get nodes`{{execute}}
 Yay! Ready to deploy!
 ``{{execute}}
-Do you miss anything? Try:
+Do you miss your network? Try:
 `kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"`{{execute}}
 
 
