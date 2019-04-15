@@ -1,22 +1,35 @@
 Learn how to work with a kubernetes-cluster and deploy your first application.
 
 `kubeadm init`{{execute HOST1}}
+
 Switch to your node and tell it to join the cluster
+
 `kubeadm join IP --token [TOKEN]`{{execute HOST2}}
 
 Try using "kubectl get nodes"
 
-Ready for deployments?
-## GO FOR IT
+## READY?
+## DEPLOY YOUR FIRST APP
 EXAMPLE APP for Deployment:
 `kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
 
+## CECK IF THERE IS A DEPLOYMENT RUNNING:
+Use:
+
+`kubectl get pods`{{execute}}
+
+Or use:
+
+`kubectl get deployments`{{execute}}
 
 **Need help?**
 ## CHEATSHEET
 Did you check if your kubernetes-components are in place?
 
 Try:
+
+
+
 `cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf`{{execute}}
