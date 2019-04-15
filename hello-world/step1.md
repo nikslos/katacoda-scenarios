@@ -20,7 +20,7 @@ Use:
 
 Or use:
 
-`kubectl get deployments`{{execute}}
+`kubectl describe pod`{{execute}}
 
 ##TROUBLESHOOTING
 
