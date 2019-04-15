@@ -1,1 +1,1 @@
-You've completed your first Katacoda scenario!
+You have deployed your first application on kubernetes!
