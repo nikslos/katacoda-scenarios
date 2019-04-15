@@ -4,16 +4,16 @@ Learn how do deploy a application on a kubernetes-cluster
 
 We start with one "master" and one "node". Try:
 
-`kubeadm init`{{execute}}
+`kubeadm init`{{execute}}\n
 Switch to your node and tell it to join the cluster
 `kubeadm join IP --token [TOKEN]`{{execute}}
 
 Try using "kubectl get nodes"
-HIDE THIS HERE:
+`\n`HIDE THIS HERE:
 `cp /etc/kubernetes/admin.conf $HOME/
 chown $(id -u):$(id -g) $HOME/admin.conf
 export KUBECONFIG=$HOME/admin.conf`{{execute}}
-Is your cluster ready? Check which parts are installed with running:
+`\n`Is your cluster ready? Check which parts are installed with running:
 `kubectl get pods --all-namespaces`{{execute}}
 and
 `kubectl get nodes`{{execute}}
