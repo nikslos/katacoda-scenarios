@@ -21,6 +21,6 @@
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart using Kubernetes using kubeadm init\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
+    "imageid": "Minikube"
   }
 }
