@@ -22,16 +22,10 @@
     }, 
     "assets": {
       "host01": [
-        {
-	  "file":"*", "target": "/root"
-	}
-      ],
-      "client": [
-        {
-          "file": "mysql-deployment.yaml",
-          "target": "~/"
-        },
-	{ "file": "example.txt", "target": "/deployments/" }
+        {"file":"mysql-deployment.yaml", "target": "/root"},
+        {"file":"mysql-service.yaml", "target": "/root"},
+        {"file":"wordpress-deployment.yaml", "target": "/root"},
+        {"file":"wordpress-service.yaml", "target": "/root"},
       ]
     }
   },
