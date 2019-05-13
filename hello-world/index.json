@@ -32,7 +32,7 @@
   "assets": {
     "host01": [
       {
-        "file": "basicdeployment/mysql-deployment.yaml",
+        "file": "mysql-deployment.yaml",
         "target": "~/"
       }
     ]
