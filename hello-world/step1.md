@@ -3,22 +3,23 @@ To create a kubernetes cluster one of the easiest ways is to use minikube. To cr
 
 `minikube start`{{execute HOST1}}
 
-After your kubernetes is up check if your cluster is running correctly. 
+After your kubernetes is up interact with your cluster. "kubectl" is the command line interface for running commands against your kubernetes-cluster. It uses a config-file which is located at $HOME/.kube/config. Check if your cluster is running correctly. 
 
 `kubectl cluster-info`{{execute HOST1}}
 
-To get full details about your cluster try adding "dump"
+If your want to get more details about your cluster try adding "dump".
 
-Check if your nodes are up and healthy.
+Check if all your nodes are up and healthy.
 
 `kubectl get nodes`{{execute HOST1}}
 
-Check all your kubernetes components:
+Let's see which kubernetes components are installed already. Check all your kubernetes components using:
 
 `kubectl get pods --all-namespaces`{{execute HOST1}}
 
-## Deploy your first kubernetes pod
+## Deploy your first app on kubernetes
 
+Now we are ready to make our first kubernetes deployment. There are several ways to deploy a container to a kubernetes cluster. One way is to use kubectl.
 Use this as an example app for your first deployment:
 
 `kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
