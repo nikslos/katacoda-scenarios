@@ -22,7 +22,7 @@ Or use:
 
 `kubectl describe pod`{{execute}}
 
-##TROUBLESHOOTING
+## TROUBLESHOOTING
 
 List your nodes
 
