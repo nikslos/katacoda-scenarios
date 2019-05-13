@@ -19,6 +19,20 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+         "file": "mysql-deployment.yaml",
+         "target": "~/"
+        }
+      ],      
+      "host01": [
+        {
+          "file": "mysql-deployment.yaml",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
@@ -29,18 +43,5 @@
     "imageid": "minikube"
   },
 
-  "assets": {
-    "client": [
-      {
-       "file": "mysql-deployment.yaml",
-       "target": "~/"
-      }
-    ],      
-    "host01": [
-      {
-        "file": "mysql-deployment.yaml",
-        "target": "~/"
-      }
-    ]
-  }
+  
 }
