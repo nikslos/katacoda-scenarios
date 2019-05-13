@@ -27,5 +27,14 @@
   },
   "backend": {
     "imageid": "minikube"
+  },
+
+  "assets": {
+    "client": [
+      {
+        "file": "basic deployment/mysql-deployment.yaml",
+        "target": "~/basic deployment/"
+      }
+    ]
   }
 }
