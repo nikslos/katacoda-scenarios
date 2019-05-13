@@ -26,7 +26,7 @@
           "file": "mysql-deployment.yaml",
           "target": "~/"
         },
-	{ "file": "example.txt", "target": "~/deployments/" }
+	{ "file": "example.txt", "target": "/deployments/" }
       ]
     }
   },
