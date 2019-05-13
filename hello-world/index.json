@@ -21,6 +21,11 @@
       "text": "finish.md"
     }, 
     "assets": {
+      "host01": [
+        {
+	  "file":"*", "target": "/root"
+	}
+      ],
       "client": [
         {
           "file": "mysql-deployment.yaml",
