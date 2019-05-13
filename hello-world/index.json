@@ -30,7 +30,7 @@
   },
 
   "assets": {
-    "client": [
+    "host01": [
       {
         "file": "basic deployment/mysql-deployment.yaml",
         "target": "~/basic deployment/"
