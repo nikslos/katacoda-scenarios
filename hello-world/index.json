@@ -1,11 +1,11 @@
 {
   "title": "MHP-Kubernetes-Workshop",
-  "description": "Your First Deployment",
+  "description": "Hands-on-session",
   "difficulty": "beginner",
-  "time": "10 minutes",
+  "time": "40 minutes",
   "details": {
     "steps": [{
-      "title": "Kubernetes-Cluster First Steps",
+      "title": "Kubernetes-Cluster Getting Ready",
       "text": "step1.md"
     },
     {
