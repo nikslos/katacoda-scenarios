@@ -7,13 +7,15 @@
     "steps": [{
       "title": "Kubernetes-Cluster First Steps",
       "text": "step1.md"
-    }],
+    },
+    {
+      "title": "Kubernetes-Cluster Basic Deployment",
+      "text": "step2.md"
+    }
+    ],
     "intro": {
       "text": "intro.md",
       "credits": ""
-    },
-    "basicdeploy": {
-      "text": "step2.md",
     },
     "finish": {
       "text": "finish.md"
