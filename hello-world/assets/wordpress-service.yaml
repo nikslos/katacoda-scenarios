@@ -11,5 +11,3 @@ spec:
     app: wordpress
     tier: frontend
   type: LoadBalancer
-  externalIPs:
-    - 192.168.12.10
