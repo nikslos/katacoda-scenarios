@@ -6,3 +6,5 @@ Welcome to the MHP Kubernetes deep-dive. During this 3-part-session you will:
 - learn how kubernetes is able to scale pods and its self-healing ability
 
 As example app you will use word-press as frontend and a mysql as database.
+
+If you look for help visit: https://kubernetes.io/de/docs/home/ or ask your kubernetes coach for help.

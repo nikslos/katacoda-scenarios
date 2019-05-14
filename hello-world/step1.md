@@ -13,6 +13,10 @@ Check if all your nodes are up and healthy.
 
 `kubectl get nodes`{{execute HOST1}}
 
+To get more information about your nodes try:
+
+`kubectl get nodes -o wide` {{execute HOST1}}
+
 Let's see which kubernetes components are installed already. Check all your kubernetes components using:
 
 `kubectl get pods --all-namespaces`{{execute HOST1}}
