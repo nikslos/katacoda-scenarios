@@ -20,7 +20,7 @@ To do this, set the replicas of the application to 3 instances. Check the pods f
 Hint: You might need some changes in the yaml
 `spec:
     replicas: 3
-`
+` {{execute}}
 
 
 ## Injection of secrets
@@ -31,7 +31,7 @@ It is possible to use kubernetes to manage the credentials and inject them into 
 
 To use a password in a secret it should be stored base64-encoded. 
 
-`echo -n '1f2d1e2e67df' | base64`
+`echo -n '1f2d1e2e67df' | base64`{{execute}}
 MWYyZDFlMmU2N2Rm
 
 You can create a secret with a yaml file which looks something like this
@@ -44,7 +44,7 @@ type: Opaque
 data:
   username: YWRtaW4=
   password: MWYyZDFlMmU2N2Rm
-`
+`{{execute}}
 
 This secret can be injected into an application with the following structure
 ```
