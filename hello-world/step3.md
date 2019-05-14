@@ -47,7 +47,8 @@ data:
 `
 
 This secret can be injected into an application with the following structure
-`spec:
+```
+spec:
   containers:
   - name: mycontainer
     image: redis
@@ -62,7 +63,7 @@ This secret can be injected into an application with the following structure
           secretKeyRef:
             name: mysecret
             key: password
-`
+```
 
 Now you should try to create a secret for the mysql-password and use it for the wordpress and mysql deployments. 
 
