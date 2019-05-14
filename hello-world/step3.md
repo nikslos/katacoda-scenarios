@@ -47,8 +47,7 @@ data:
 `
 
 This secret can be injected into an application with the following structure
-`[…]
-spec:
+`spec:
   containers:
   - name: mycontainer
     image: redis
