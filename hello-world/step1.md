@@ -28,5 +28,10 @@ Investigate your deployment is your container "RUNNING", still "WAITING" or "TER
 
 `kubectl get pods`{{execute}}
 
+You can get further information about your pod if you use "describe pod [RESOURCE]"
+
 `kubectl describe pod`{{execute}}
 
+Before you continue you have to delete your running POD you can use:
+
+`kubectl delete deployment http`{{execute}}
