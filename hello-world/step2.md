@@ -6,7 +6,7 @@ We will need two pods, one with a container running wordpress on an apache webse
 ## Deploy wordpress
 
 Start with deploying the wordpress application
-`kubectl apply -f <deployment.yaml>` {{execute}}
+`kubectl apply -f <deployment.yaml>`{{execute}}
 
 Check your successful deployment with 
 `kubectl get deployments`{{execute}}
@@ -14,7 +14,7 @@ Check your successful deployment with
 ## Deploy mysql
 
 Deploy a mysql database 
-`kubectl apply -f <deployment.yaml>` {{execute}}
+`kubectl apply -f <deployment.yaml>`{{execute}}
 
 
 ## Connect the database with a service

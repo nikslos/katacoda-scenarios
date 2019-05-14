@@ -19,8 +19,7 @@ To do this, set the replicas of the application to 3 instances. Check the pods f
 
 Hint: You might need some changes in the yaml
 `spec:
-    replicas: 3
-` {{execute}}
+    replicas: 3`{{execute}}
 
 
 ## Injection of secrets
@@ -43,8 +42,7 @@ metadata:
 type: Opaque
 data:
   username: YWRtaW4=
-  password: MWYyZDFlMmU2N2Rm
-`{{execute}}
+  password: MWYyZDFlMmU2N2Rm`{{execute}}
 
 This secret can be injected into an application with the following structure
 ```
