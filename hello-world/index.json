@@ -30,10 +30,10 @@
     }, 
     "assets": {
       "host01": [
-        {"file":"mysql-deployment.yaml", "target": "/root"},
-        {"file":"mysql-service.yaml", "target": "/root"},
-        {"file":"wordpress-deployment.yaml", "target": "/root"},
-        {"file":"wordpress-service.yaml", "target": "/root"}
+        {"file":"mysql-deployment.yaml", "target": "/root/deployments/"},
+        {"file":"mysql-service.yaml", "target": "/root/deployments/"},
+        {"file":"wordpress-deployment.yaml", "target": "/root/deployments/"},
+        {"file":"wordpress-service.yaml", "target": "/root/deployments/"}
       ]
     }
   },
