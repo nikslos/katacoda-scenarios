@@ -16,11 +16,6 @@ spec:
       containers:
       - image: wordpress:4.8-apache
         name: wordpress
-        env:
-        - name: WORDPRESS_DB_HOST
-          value: wordpress-mysql
-        - name: WORDPRESS_DB_PASSWORD
-          value: "mysecretpassword"
         ports:
         - containerPort: 80
           name: wordpress
