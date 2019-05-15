@@ -1,4 +1,3 @@
-## Deploy your first app on kubernetes
 
 Now we are ready to make our first kubernetes deployment. There are several ways to deploy a container to a kubernetes cluster. One way is to use kubectl.
 Use this as an example app for your first deployment:
@@ -15,4 +14,5 @@ You can get further information about your pod if you use "describe pod [RESOURC
 
 Before you continue you have to delete your running POD you can use:
 
-`kubectl delete deployment http`{{execute}
+`kubectl delete deployment http`{{execute}}
+
