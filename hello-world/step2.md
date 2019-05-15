@@ -1,22 +1,18 @@
-Learn how to work with a kubernetes-cluster and deploy your first application.
+## Deploy your first app on kubernetes
 
-We want to deploy a workpress application. 
-We will need two pods, one with a container running wordpress on an apache webserver and one with a container running a mysql database. 
+Now we are ready to make our first kubernetes deployment. There are several ways to deploy a container to a kubernetes cluster. One way is to use kubectl.
+Use this as an example app for your first deployment:
 
-## Deploy wordpress
+`kubectl run http --image=katacoda/docker-http-server:latest --replicas=1`{{execute}}
 
-Start with deploying the wordpress application
-`kubectl apply -f <deployment.yaml>`{{execute}}
+Investigate your deployment is your container "RUNNING", still "WAITING" or "TERMINATED"?
 
-Check your successful deployment with 
-`kubectl get deployments`{{execute}}
+`kubectl get pods`{{execute}}
 
-## Deploy mysql
+You can get further information about your pod if you use "describe pod [RESOURCE]"
 
-Deploy a mysql database 
-`kubectl apply -f <deployment.yaml>`{{execute}}
+`kubectl describe pod`{{execute}}
 
+Before you continue you have to delete your running POD you can use:
 
-## Connect the database with a service
-
-Create a service to allow internal connections to the database.
+`kubectl delete deployment http`{{execute}
