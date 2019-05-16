@@ -1,27 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress
+  name: drupal
   labels:
-    app: wordpress
+    app: drupal
 spec:
   selector:
     matchLabels:
-      app: wordpress
+      app: drupal
   template:
     metadata:
       labels:
-        app: wordpress
+        app: drupal
     spec:
       containers:
-      - image: wordpress:4.8-apache
-        name: wordpress
+      - image: drupal:4.8-apache
+        name: drupal
         ports:
         - containerPort: 80
-          name: wordpress
+          name: drupal
         volumeMounts:
-        - name: wordpress-storage
+        - name: drupal-storage
           mountPath: /var/www/html
       volumes:
-      - name: wordpress-storage
+      - name: drupal-storage
         emptyDir: {}

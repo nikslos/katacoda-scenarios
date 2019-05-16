@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress-mysql
+  name: drupal-mysql
   labels:
-    app: wordpress
+    app: drupal
 spec:
   selector:
     matchLabels:
-      app: wordpress
+      app: drupal
   template:
     metadata:
       labels:
-        app: wordpress
+        app: drupal
     spec:
       containers:
       - image: mysql:5.6

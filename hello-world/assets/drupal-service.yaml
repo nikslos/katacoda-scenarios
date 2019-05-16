@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wordpress
+  name: drupal
   labels:
-    app: wordpress
+    app: drupal
 spec:
   ports:
     - port: 80
   selector:
-    app: wordpress
-    tier: frontend
+    app: drupal
   type: LoadBalancer
