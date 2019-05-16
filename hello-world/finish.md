@@ -1,1 +1,6 @@
-You have deployed your first application on kubernetes!
+Thanks for participating at the MHP-Kubernetes Workshop. 
+
+For further information about Kubernetes ask your coaches. 
+
+
+Have a nice TechDay!
