@@ -14,7 +14,7 @@ spec:
         app: drupal
     spec:
       containers:
-      - image: drupal:4.8-apache
+      - image: drupal:8.6
         name: drupal
         ports:
         - containerPort: 80
