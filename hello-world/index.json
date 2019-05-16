@@ -32,8 +32,8 @@
       "host01": [
         {"file":"mysql-deployment.yaml", "target": "/root/deployments/"},
         {"file":"mysql-service.yaml", "target": "/root/deployments/"},
-        {"file":"wordpress-deployment.yaml", "target": "/root/deployments/"},
-        {"file":"wordpress-service.yaml", "target": "/root/deployments/"}
+        {"file":"drupal-deployment.yaml", "target": "/root/deployments/"},
+        {"file":"drupal-service.yaml", "target": "/root/deployments/"}
       ]
     }
   },
